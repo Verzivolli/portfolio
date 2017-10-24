@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pyetësor mbi PPV Vau i Dejës">
+    <meta name="author" content="Ani Verzivolli">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="javascript/starfield.js" type="text/javascript"></script>
+    <script src="javascript/svganimation.js" type="text/javascript"></script>
+    <script src="javascript/splitscreen.js" type="text/javascript"></script>
+    <scipt></scipt>
+    <script src="javascript/dropdownlink.js" type="text/javascript"></script>
+</head>
+
+<body onresize="canvasresize()">
+    <header>
+        <nav id="removepadding" class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <div class="btn text-center"><a class="navbar-brand" href="#">
+AniV
+</div></div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse navbar-right" id="main-nav">
+<ul class="nav navbar-nav">
+<li class="btn"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+Home</a></li>
+                        <li class="btn"> <a href="#aboutsection" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle" aria-hidden="true"></i>
+About</a></li>
+                        <li class="btn"> <a href="#portfolio-section" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th-large" aria-hidden="true"></i>
+Portofolio</a></li>
+                        <li class="btn"> <a href="#contactsection" class="dropdown-toggle" data-toggle="dropdown">Contact</a></li>
+                        <!-- dropdown -->
+
+                        <li class="btn dropdown"> <a href="/what-is-reech.apsx" class="dropdown-toggle" data-toggle="dropdown">Other Projects - Pens<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class=""><a href="https://codepen.io/AniV/pen/PJogVv" target="blank">Solar System</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class=""><a href="#">Comming Soon..</a></li>
+                                <li class=""><a href="#">Yelp Camp</a></li>
+                            </ul>
+                        </li>
+                        <!-- dropdown -->
+                        </ul>
+                        <!-- nav navbar-nav -->
+                    </div>
+                    <!-- collapse navbar-collapse -->
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- Navbar ends here -->
+
+    <!-- Try for p5 magic -->
+    <!-- p5 Inspiration from Train Code of Daniel Shiffman   https://www.youtube.com/watch?v=17WoOqgXsRM&list=PLRqwX-V7Uu6ZiZxtDDRCi6uhfTH4FilpH  -->
+    <div class="canvas-svg-text" id="canvas-svg-text">
+        <div class="canvas-container" id="canvas-container" width="100%">
+            <!--<canvas id="mycanvas">
+
+</canvas>-->
+            <!--
+<p class="text-center absolute-pos">AniV</p>
+-->
+        </div>
+    </div>
+    <!-- try for p5 magic ends here -->
+    <!-- about me section starts here -->
+
+    <section class="about-me" id="aboutsection">
+        <div class="jumbotron">
+            <div class="floating-conatiner">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxYuoZdV_s3cMs1hkdZUTNYeS4bFwBHWN73AapdTYZPEZc8fvmnA" alt="" class="leftFloat">
+                <div class="rightFloat">
+                    <h1 class="text-center">Web Developer</h1>
+
+
+                    <p>I am a self–taught web developer willing to improve my skills. I learn fast and get fast adapted to new technology. I know that a web developer job will help me improve and make me spend my whole time on my passion. Some skills learned
+                        developing: Node.js; Object oriented programing; MongoDB; API (using request npm); Geolocation and Google maps API;
+                        <!--
+<br>Not web related programing languages: VBA, python(i know python is widely used in back-end but i have used it only for ArcGis(mapping) purposes.)
+--></p>
+                </div>
+                <!-- pull div -->
+            </div>
+            <!-- container div -->
+        </div>
+        <!-- jumbotron div -->
+
+    </section>
+    <!-- about me section ends here -->
+    <!-- splitscreen section starts here -->
+    <!-- inspired from Traversy Media tutorial -->
+    <div class="row">
+        <div id="splitScreen" class="col-xl-12" background="green">
+
+
+            <section id="wrapper" class="skewed">
+                <div class="layer bottom">
+                    <div class="content-wrap">
+                        <div class="content-body">
+                            <h1>Website</h1>
+                            <p>A website is a unique way to connect with the world. Whether you choose to create a website to share your passion for music, inform people of your business, sell products, or any other reason—there are no boundaries to what
+                                you can do! With a website, tons of possibilities are available to you!</p>
+                        </div>
+                        <img src="https://drive.google.com/uc?export=view&id=0B1EL5ztIoMPBd1E5Sng4dTFyam8" alt="">
+                    </div>
+                </div>
+
+                <div class="layer top">
+                    <div class="content-wrap">
+                        <div class="content-body">
+                            <h1>World Wide Web</h1>
+                            <p>The World Wide Web has been central to the development of the Information Age and is the primary tool billions of people use to interact on the Internet.</p>
+                        </div>
+                        <img src="http://www.corsair.com/Media/catalog/product/3/0/300rw_hero_up_a_1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="handle"></div>
+
+
+        </div>
+    </div>
+    <!-- splitscreen section ends here -->
+    <!-- portofolio section starts here -->
+
+
+    <section class="portofolio" id="portfolio-section">
+        <div class="container">
+            <h2 class="text-center">Portofolio</h2>
+            <!-- first item -->
+            <div class="col-sm-6 col-md-4">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center"><strong>Name: Solar System</strong></h3>
+                    </div>
+                    <!-- panel-heading div -->
+                    <div class="panel-body text-center">
+                        <img src="http://cdn.playbuzz.com/cdn/79b7b00e-a99e-44a9-a783-7b74477f0ba1/e95ede2c-6862-43c9-b0a0-5ef34be9eab2.jpg" width="98%"><img>
+                        <div class="margin">
+                            Made for first freecodecamp challenge.
+                            <a href="https://codepen.io/AniV/pen/PJogVv" class="btn btn-block btn-primary" target="blank">Go to Pen</a>
+                        </div>
+                        <!-- margin div -->
+                    </div>
+                    <!-- panel-body div -->
+                </div>
+                <!-- panel div -->
+            </div>
+            <!-- column div -->
+            <!-- second item -->
+            <div class="col-sm-6 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center"><strong>Name: Yelp Camp</strong></h3>
+                    </div>
+                    <!-- panel-heading div -->
+                    <div class="panel-body text-center">
+                        <img src="https://drive.google.com/uc?export=view&id=0B1EL5ztIoMPBQlU3ZFRBVUQ1QjA" width="98%"><img>
+                        <div class="margin">
+                            This is basicaly a MEAN App without Angular.</br>
+                            Note: it isnt finish but anyway is deplyed on heroku. Developed watching Steve Colt tutorial series.
+                            <a href="https://aqueous-garden-23490.herokuapp.com/" class="btn btn-block btn-primary" target="_blank">Go to Pen</a>
+                        </div>
+                        <!-- margin div -->
+                    </div>
+                    <!-- panel-body div -->
+                </div>
+                <!-- panel div -->
+            </div>
+            <!-- column div -->
+            <!-- third item -->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <h4 class="text-center">Name: Portfolio</h4>
+                    <img src="https://drive.google.com/uc?export=view&id=0B1EL5ztIoMPBQVJERjdoVzQ3am8"><img>
+                    <div class="caption">
+                        <p class="text-center">
+                            Note: Made for second freecodecamp challenge.
+                            <a href="/campgrounds/<%= campground._id %>" class="btn btn-block btn-primary">Go to Pen</a>
+                        </p>
+                    </div>
+                    <!-- Caption div -->
+                </div>
+                <!-- Thumbnail div -->
+            </div>
+            <!-- column div -->
+
+        </div>
+    </section>
+    <!-- portofolio section ends here -->
+    <!-- contact section starts here -->
+    <hr>
+
+
+
+    <section class="contact" id="contactsection">
+        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+            <div class="col-sm-6">
+                <div class="conatiner">
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <input type="text" name="name" id="name" required="required" class="col-xs-12 form" placeholder="Name" />
+                            <!-- Email -->
+                            <input type="email" name="mail" id="mail" required="required" class="col-xs-12 form" placeholder="Email" />
+                            <!-- Subject -->
+                            <input type="text" name="subject" id="subject" required="required" class="col-xs-12 form" placeholder="Subject" />
+                        </div>
+                        <!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-12 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea name="message" id="message" class="col-xs-12 form textarea" placeholder="Message"></textarea>
+                        </div>
+                        <!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="btn btn-primary btn-block"><i class="fa fa-envelope" aria-hidden="true"></i>
+Send Message</button>
+                        </div>
+                        <!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                <!-- container div -->
+            </div>
+            <!-- col div -->
+
+            <div class="col-sm-6 col-xs-12">
+                <div class="hadwriten">
+                    <h3>Thank you for visiting</h3>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <!-- rating div -->
+                    <p>This page is created as a challenge. <br>I hope you like it.</p>
+                    <div class="contact-container">
+                        <div class="contact-icons">
+
+                            <div class="contact-svg-icon">
+                                <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path
+   d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+   id="facebook-nofill"
+   style="fill:none;stroke:none;stroke-opacity:1" />
+<path
+   d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+   id="facebook-circle"
+   style="fill:none;stroke:#e0e0e0;stroke-opacity:1" />
+<path
+   d="M 10,10 H 8 v 2 h 2 v 6 h 3 v -6 h 1.82 L 15,10 H 13 V 9.167 C 13,8.689 13.096,8.5 13.558,8.5 H 15 V 6 H 12.596 C 10.798,6 10,6.792 10,8.308 Z"
+   id="facebook-center" class="facebook-center" style="fill:#e0e0e0;"/>
+</svg>
+
+                            </div>
+                            <!-- contact-svg-icon div -->
+                            <div class="contact-svg-icon">
+                                <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path
+     d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+     id="linkedin-nofill"
+     style="fill:none;stroke:none;stroke-opacity:1" />
+  <path
+     d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+     id="linkedin-circle"
+     style="fill:none;stroke:#e0e0e0;stroke-opacity:1" />
+  <path
+     d="M 10,8 C 10,8.557 9.553,9.008 9,9.008 8.447,9.008 8,8.558 8,8 8,7.443 8.447,6.992 9,6.992 c 0.553,0 1,0.452 1,1.008 z"
+     class="linkedin-center"  style="fill:#e0e0e0;"/>
+  <path
+     d="M 10,10 H 8 v 6 h 2 z"
+     id="path4489" class="linkedin-center"  style="fill:#e0e0e0;"/>
+  <path
+     d="m 13,10 h -2 v 6 h 2 v -2.861 c 0,-1.722 2.002,-1.881 2.002,0 V 16 H 17 V 12.641 C 17,9.357 13.872,9.477 13,11.093 Z"
+     id="path2"  class="linkedin-center"  style="fill:#e0e0e0;"/>
+</svg>
+                            </div>
+                            <!-- contact-svg-icon div -->
+
+                            <div class="contact-svg-icon">
+                                <svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+   
+   <path
+     d="m 12,2.02 c 5.514,0 10,4.486 10,10 0,5.514 -4.486,10 -10,10 -5.514,0 -10,-4.486 -10,-10 0,-5.514 4.486,-10 10,-10 z"
+     id="mail-nofill"
+     style="fill:none;stroke:none;stroke-opacity:1" />
+  <path
+     d="m 12,2.02 c 5.514,0 10,4.486 10,10 0,5.514 -4.486,10 -10,10 -5.514,0 -10,-4.486 -10,-10 0,-5.514 4.486,-10 10,-10 z"
+     id="mail-circle"
+     style="fill:none;stroke:#e0e0e0;stroke-opacity:1" />
+  <path
+     d="M 12,12.57 6.008,8 h 11.983 z"
+     id="path4489" class="mail-center" style="fill:#e0e0e0;"/>
+  <path
+     d="M 12,13.858 6,9.229 V 16 H 18 V 9.229 Z"
+     id="path2" class="mail-center" style="fill:#e0e0e0;"/>
+</svg>
+                            </div>
+                            <!-- contact-svg-icon div -->
+
+                            <div class="contact-svg-icon">
+                                <svg id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+ <path
+   d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+   id="github-nofill"
+   style="fill:none;stroke:none;stroke-opacity:1" />
+ <path
+   d="M 12,2 C 17.514,2 22,6.486 22,12 22,17.514 17.514,22 12,22 6.486,22 2,17.514 2,12 2,6.486 6.486,2 12,2 Z"
+   id="github-circle"
+   style="fill:none;stroke:#e0e0e0;stroke-opacity:1" />
+  <path
+     d="m 12,6 c -3.313,0 -6,2.686 -6,6 0,2.651 1.719,4.9 4.104,5.693 0.3,0.056 0.396,-0.13 0.396,-0.289 V 16.287 C 8.831,16.65 8.483,15.58 8.483,15.58 8.211,14.887 7.817,14.702 7.817,14.702 7.273,14.329 7.858,14.337 7.858,14.337 c 0.603,0.042 0.92,0.619 0.92,0.619 0.535,0.917 1.403,0.652 1.746,0.499 0.054,-0.388 0.209,-0.652 0.381,-0.802 -1.333,-0.152 -2.733,-0.667 -2.733,-2.965 0,-0.655 0.234,-1.19 0.618,-1.61 -0.062,-0.153 -0.268,-0.764 0.058,-1.59 0,0 0.504,-0.161 1.65,0.615 C 10.977,8.97 11.49,8.904 12,8.901 c 0.51,0.002 1.023,0.069 1.503,0.202 1.146,-0.776 1.648,-0.615 1.648,-0.615 0.327,0.826 0.121,1.437 0.06,1.588 0.385,0.42 0.617,0.955 0.617,1.61 0,2.305 -1.404,2.812 -2.74,2.96 0.216,0.186 0.412,0.551 0.412,1.111 v 1.646 c 0,0.16 0.096,0.347 0.4,0.288 C 16.283,16.898 18,14.65 18,12 18,8.686 15.313,6 12,6 Z"
+     id="path5054" class="github-center" style="fill:#e0e0e0;"/>
+</svg>
+                            </div>
+                            <!-- contact-svg-icon div -->
+
+                        </div>
+                        <!-- contact-icons div -->
+                    </div>
+                    <!-- contact-container div -->
+                </div>
+                <!-- handwritten div -->
+
+            </div>
+            <!-- col div -->
+        </div>
+        <!-- row div -->
+    </section>
+    </hr>
+    <footer class="footer text-right">
+        &#169; AniV
+    </footer>
+    <!-- contact section ends here -->
+
+</body>
+
+</html>

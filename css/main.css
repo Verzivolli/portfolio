@@ -1,0 +1,298 @@
+/* not sure why this is here ↓*/
+.navbar-toggle
+{
+    position:relative;
+    float:right;
+    margin-right:15px;
+    background-color:transparent;
+    background-image:none;
+    border:1px solid #444;          /* added line */
+    border-radius:4px
+}
+
+.icon-bar
+{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+}
+
+.icon-bar
+{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+    border:1px solid #444;
+}
+
+/* preventing active class of automately added by bootstrap */
+ul li a {
+   background: initial !important;
+  color: #888 !important;
+}
+ul li a:hover {
+  color: white !important;
+}
+
+.dropdown-menu li a:hover {
+  color: black !important;
+}
+
+/* ↑not sure why this is here ↑*/
+
+/*
+Need to check btn clas
+btn header must try solid line right
+text.center toogle based on screen width
+*/
+
+.canvas-svg-text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden; }
+
+#mycanvas {
+  width: 100%;
+  display: block;
+  position: absolute;
+  background: #eee;
+  min-height: 250px;
+  max-height: 300px; }
+*{
+  margin:0;
+  padding:0;
+}
+
+#removepadding{
+margin: 0;
+}
+.absolute-pos{
+  margin:auto;
+padding-top:125px;
+  padding-bottom:auto;
+  position: absolute;
+width: 100%;
+  z:1;
+}
+
+.jumbotron{
+  margin-bottom:0;
+}
+
+/* split screen css starts here */
+#splitScreen{
+  min-height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper{
+  position: relative;
+  width:100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: center;
+  transform:translateY(-50%);
+  color:#fff;
+}
+
+.layer img{
+  position: absolute;
+  width:35%;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.layer h1{
+  font-size:2em;
+}
+
+.bottom{
+  background:#222;
+  z-index:1;
+}
+
+.bottom .content-body{
+  right:5%;
+}
+
+.bottom h1{
+  color:#FDAB00;
+}
+
+.top{
+  background:#eee;
+  color:#222;
+  z-index:2;
+  width:50vw;
+}
+
+.top .content-body{
+  left: 5%;
+  color:#222;
+}
+
+.handle{
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #FDAB00;
+  width:5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+  top:50%;
+  transform:rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-30deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+  transform: skew(30deg);
+  margin-left:1000px;
+}
+
+@media(max-width:768px){
+  body{
+    font-size:75%;
+  }
+}
+/* split screen css ends here */
+
+/* portfolio css starts here */
+.btn-primary {
+  border-radius: 20px;
+  margin-top:5px;
+}
+.panel-body{
+  padding:0;
+}
+.panel-body .margin{
+  margin:5%;
+}
+.panel-body img{
+  margin: 1%;
+  height: 300px;
+}
+.contact{
+  margin-bottom:30px;
+}
+/* portfolio css ends here */
+
+/* contact form css starts here */
+form {
+  padding: 20px;
+}
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+input {
+  height: 35px;
+}
+/* contact form css ends here */
+
+
+/* rating css starts here */
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+/* rating css ends here */
+
+
+/* about me css starts here */
+.jumbotron {
+  min-height:320px;
+  padding: 20px;
+}
+.floating-container {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.leftFloat {
+  float:left;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* about me css ends here */
+
+
+/* contact icons css starts here */
+
+.contact-svg-icon{
+margin:5%;
+  display: inline;
+}
+
+
+.contact-container {
+margin-top:5%;
+}
+svg{
+ width:35px;
+  height:35px;
+
+}
+
+/* contact icons css ends here */
+
+
+/*footer css */
+.footer {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+      background: #e0e0e0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e0e0e0, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e0e0e0, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e0e0e0, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e0e0e0, black); /* Standard syntax */
+}
+/*footer css */
