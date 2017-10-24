@@ -249,7 +249,9 @@ input {
 .jumbotron {
   min-height:320px;
   padding: 20px;
+  margin-bottom: 0px;
 }
+
 .floating-container {
   display:flex;
   flex-wrap: wrap;
@@ -259,6 +261,7 @@ input {
   float:left;
   flex-wrap: wrap;
   margin: 20px;
+  margin-bottom:0;
 }
 
 /* about me css ends here */
