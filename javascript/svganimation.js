@@ -1,4 +1,5 @@
-window.onload = function(){
+
+$(document).ready(function() {
 $("svg").mouseover(function(){
   var svgID = $(this).attr("id");
   var strokeID = "#" + svgID + "-nofill";
@@ -8,7 +9,6 @@ $("svg").mouseover(function(){
   $(circleID).css({"stroke-dasharray": "63","stroke": "black", "stroke-dashoffset": "63"});
   $(strokeID).css({'fill': '#d8eeff'});
   $(centerID).css({"fill": "black"});
-  
 });
 $("svg").mouseenter(function(){
   var svgID = $(this).attr("id");
@@ -27,4 +27,4 @@ $("svg").mouseout(function(){
   $(strokeID).css({'fill': 'none', "stroke": "#e0e0e0"});
   $(centerID).css({"fill": "#e0e0e0"})
 });
-}
+});

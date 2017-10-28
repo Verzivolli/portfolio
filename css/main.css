@@ -270,19 +270,25 @@ input {
 /* contact icons css starts here */
 
 .contact-svg-icon{
-margin:5%;
-  display: inline;
+  margin:5%;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  display: inline-block;
+
 }
 
 
 .contact-container {
 margin-top:5%;
 }
-svg{
- width:35px;
-  height:35px;
 
+svg{
+width:35px;
+height:35px;
+pointer-events: all;
 }
+
 
 /* contact icons css ends here */
 
